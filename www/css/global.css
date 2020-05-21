@@ -1,0 +1,296 @@
+/*
+  File Name  global.css
+  Project    web-recipe-book
+  Version    0.1.0
+  Author     Peter Lindstrom
+  Purpose    Global styles utilized throughout the web recipe book.
+  Copyright  2020, Peter Lindstrom
+  Link       https://github.com/plindstrom/web-recipe-book
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Francois+One|Jost&display=swap');
+
+html,body,header,footer,nav,main,section,article,aside,h1,h2,h3,h4,h5,h6,ol,ul,img,p{
+	display: block;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+html{
+	font-size: 100%;
+	font-family: Jost, sans-serif;
+	color: #202020;
+}
+
+body{
+	background-color: #eee;
+}
+
+header .box-content,nav .box-content,main .box-content,footer .box-content{ 
+	width: 75%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+header{
+	background-color: #031d38;
+}
+
+header .box-content{
+	padding: 2rem;
+	text-align: center;
+	background-color: #061f40;
+}
+
+nav{
+	background-color: #0a2d5a;
+}
+
+nav .box-content{
+	padding: 1rem 2rem;
+	text-align: center;
+	background-color: #0d2f5c;
+}
+
+nav ul{
+	list-style-type: none;
+}
+
+nav li{
+	display: inline;
+}
+
+nav a{
+	margin: 0 2rem;
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 2px solid #0d2f5c;
+}
+
+nav a:hover{
+	color: #9ec8ff;
+	border-bottom: 2px solid #7ea8df;
+}
+
+main{
+	background-color: #eee;
+}
+
+main .box-content{
+	padding: 2rem;
+	background-color: #fff;
+}
+
+footer{
+	clear: both;
+	background-color: #e0e0e0;
+	background-image: linear-gradient(#e0e0e0, #eee);
+}
+
+footer .box-content{
+	padding: 1rem 2rem;
+	font-size: 0.8rem;
+	background-color: #eee;
+}
+
+footer p{
+	margin: 0;
+}
+
+footer p.align-left, footer p.align-right{
+	text-align: center;
+}
+
+br.clear-both{
+	clear: both;
+}
+
+h1{
+	font: normal 1.8rem "Francois One";
+	color: #d1e5ff;
+}
+
+h2{
+	margin: 0 0 1.4rem 0;
+	font: bold 2.4rem "Francois One";
+}
+
+h3{
+	margin: 5rem 0 0.5rem 0;
+	font: bold 1.8rem "Francois One";
+	color: #0d2f5c;
+}
+
+h4{
+	margin: 0 0 1rem 0;
+	font: bold 1.3rem "Francois One";
+	border-bottom: 2px solid #c0c0c0;
+	color: #333;
+}
+
+p{
+	margin: 0 0 1.4rem 0;
+	font-size: 1.2rem;
+}
+
+a{
+	color: #0d2f5c;
+	border-bottom: 2px solid #7ea8df;
+	text-decoration: none;
+	transition: color 0.25s;
+	transition: border 0.25s;
+}
+
+a:hover{
+	color: #2576df;
+	border-bottom: 2px solid #9ec8ff;
+}
+
+.no-margin-bottom{
+	margin-bottom: 0;
+}
+
+.list-standard{
+	margin: 0 0 1.4rem 0;
+	font-size: 1.2rem;
+}
+
+.list-standard li{
+	margin-left: 2rem;
+}
+
+/* BROWSE AND SEARCH ONLY */
+.list-browse{
+	font-size: 1.2rem;
+}
+
+.list-browse li{
+	margin: 0 0 1.25rem 2rem;
+}
+
+.box-filter{
+	float: right;
+	width: 20%;
+	margin: 0 0 2rem 2rem;
+	padding: 2rem;
+	border: 1px solid #e0e0e0;
+	border-radius: 0.25rem;
+	background-color: #eee;
+}
+
+.box-filter li{
+	list-style-type: none;
+	line-height: 2rem;
+}
+
+.box-filter li.link-all{
+	margin-bottom: 2rem;
+}
+
+
+/* RECIPE ONLY */
+.column-ingredients{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.list-ingredients{
+	width: 45%;
+	max-width: 500px;
+	margin: 1rem 0 1.4rem 0;
+	font-size: 1.2rem;
+}
+
+.list-ingredients li{
+	margin: 0 0 1.25rem 2rem;
+}
+
+.ingredient-amount{
+	font-size: 1rem;
+	color: #505050;
+}
+
+.list-directions{
+	margin: 1rem 0 1.4rem 0;
+	font-size: 1.2rem;
+}
+
+.list-directions li{
+	margin: 0 0 1.25rem 2rem;
+}
+
+.list-summary{
+	margin: 0 0 2rem 0;
+	list-style-type: none;
+}
+
+.list-summary li{
+	display: inline;
+	margin: 0 2rem 0 0;
+	font-size: 1rem;
+}
+
+/* INDEX ONLY */
+.box-search{
+	margin: 1rem 0 0 0;
+	text-align: center;
+}
+
+.box-browse{
+	margin: 5rem 0 1rem 0;
+}
+
+.column-browse{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.list-categories{
+	width: 45%;
+	max-width: 500px;
+	list-style-type: none;
+}
+
+.list-categories li{
+	margin: 0 0 1.5rem 0;
+	font-size: 1.4rem;
+}
+
+.list-categories li a{
+	display: block;
+	font-weight: bold;
+}
+
+.list-categories li ul{
+	list-style-type: none;
+}
+
+.list-categories li ul li{
+	display: inline;
+	margin: 1rem 0 0 0;
+	text-decoration: none;
+}
+
+.list-categories li ul li a{
+	display: inline-block;
+	margin: 0.5rem 0.5rem 0 0;
+	border-bottom: 2px solid #fff;
+	font-weight: normal;
+	font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 480px){
+}
+
+@media only screen and (min-width: 768px){
+	.align-left{
+		float: left;
+	}
+
+	.align-right{
+		float: right;
+	}
+}

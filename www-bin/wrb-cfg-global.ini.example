@@ -1,0 +1,11 @@
+[host]
+basepath=/home/user/www/
+
+[wrb]
+name=Web Recipe Book
+
+[database]
+hostname=dbhost
+username=dbuser
+password=dbpass
+database=dbname
